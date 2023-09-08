@@ -15,7 +15,7 @@ const time = () => {
 }
 
 const navigate = () => {
-    window.open(`https://github.com/Maloney18`)
+    window.open(`https://github.com/Maloney18/first-HNG-intern-task.git`)
 }
 
 time()

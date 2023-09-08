@@ -57,6 +57,7 @@
     border-radius: 17px;
     background: white;
     font-weight: bolder;
+    font-size: 15px;
     transition: all 0.05s ease-in;
 }
 
@@ -82,9 +83,14 @@
     display: flex;
     flex-direction: column;
     gap: 7px;
+    width: fit-content;
 }
 
 .github-url {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 50%;
     transition: all 0.05 ease-in;
 }
 
@@ -121,6 +127,7 @@
 
     .follow-btn button {
         width: 150px;
+        font-size: 17px;
     }
 
     
