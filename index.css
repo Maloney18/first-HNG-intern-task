@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open sans';
+}
+
+.profile-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+    
+.backg-pic {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    padding: 10px 10px 0 0;
+    justify-content: flex-end;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    background: linear-gradient(to right,#1034a6bd, #1034a6c2, #1034A6);
+}
+
+.profile-pic-wrapper {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: -30px;
+    left: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    box-shadow: 0 0 25px white;
+}
+
+.follow-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.follow-btn button {
+    width: 100px;
+    outline: none;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 17px;
+    background: white;
+    font-weight: bolder;
+    transition: all 0.05s ease-in;
+}
+
+.follow-btn button:hover, .follow-btn button:focus {
+    box-shadow: 0 0 15px white;
+    cursor: pointer;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 0 0 20px;
+}
+
+.profile-name {
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.trk-git {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.github-url {
+    transition: all 0.05 ease-in;
+}
+
+.github-url:hover, .github-url:focus {
+    cursor:pointer;
+    opacity: 0.5;
+}
+
+.time {
+    display: flex;
+    gap: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+.flx {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 450px) {
+
+    .backg-pic {
+        height: 35%;
+    }
+
+    .profile-pic-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+
+    .follow-btn button {
+        width: 150px;
+    }
+
+    
+    .profile-name {
+        font-size: 25px;
+    }
+
+    .trk-git {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
